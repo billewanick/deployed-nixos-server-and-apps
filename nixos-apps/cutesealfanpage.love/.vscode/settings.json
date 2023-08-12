@@ -1,0 +1,21 @@
+{
+    "git.ignoreLimitWarning": true,
+    "cSpell.words": [
+        "cutesealfanpage",
+        "Dhall",
+        "Fanpage",
+        "fmap",
+        "Hakyll",
+        "Lookie",
+        "mappend",
+        "Monoid",
+        "Namecheap",
+        "NOINLINE",
+        "pandoc",
+        "runghc",
+        "uncurry",
+        "unlines",
+        "utct"
+    ],
+    "nix.serverPath": "nil"
+}

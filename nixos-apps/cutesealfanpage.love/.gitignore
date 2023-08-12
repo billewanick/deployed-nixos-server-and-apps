@@ -1,0 +1,15 @@
+# Haykll site
+_cache
+_site
+result
+
+# Haskell stuff
+site
+dist
+*.dyn_hi
+*.dyn_o
+*.hi
+*.o
+
+# Direnv lorri stuff
+.direnv
