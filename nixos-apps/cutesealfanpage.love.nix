@@ -22,7 +22,7 @@ in
       enable = true;
       description = "The hakyll executable that rebuilds the site when a new blog post is created.";
       serviceConfig = {
-        ExecStart = "${pkgs.cd}/bin/cd ${PROJECT_ROOT}/cutesealfanpage.love; ${pkgs.nix}/bin/nix run .#hakyll-site -- watch --no-server";
+        ExecStart = "cd ${PROJECT_ROOT}/cutesealfanpage.love; ${pkgs.nix}/bin/nix run .#hakyll-site -- watch --no-server";
       };
     };
 
@@ -31,7 +31,7 @@ in
       description = "The haskell script that creates the new post of the day.";
       startAt = "08:12:42";
       serviceConfig = {
-        ExecStart = "${pkgs.cd}/bin/cd ${PROJECT_ROOT}/cutesealfanpage.love; ${pkgs.nix}/bin/nix run .#generateSealPosts";
+        ExecStart = "echo Hello; cd ${PROJECT_ROOT}/cutesealfanpage.love; ${pkgs.nix}/bin/nix run .#generateSealPosts";
       };
     };
   };
