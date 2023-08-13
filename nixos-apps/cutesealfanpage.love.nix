@@ -31,7 +31,7 @@ in
       description = "The haskell script that creates the new post of the day.";
       startAt = "08:12:42";
       serviceConfig = {
-        ExecStart = "${pkgs.nix}/bin/nix run git@github.com:billewanick/sealPostGenerator.git";
+        ExecStart = "${pkgs.nix}/bin/nix run git+https://github.com/billewanick/sealPostGenerator.git#default";
       };
     };
   };
